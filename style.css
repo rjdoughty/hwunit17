@@ -1,0 +1,109 @@
+body{
+  background-color: rgb(38, 37, 49);
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 1;  
+  padding: 20px; 
+  color: white;  
+}
+
+main {
+    display: grid;
+    height: 100%;  
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(7, 1fr);   
+}  
+
+.box{
+    border: 1px solid black;
+  }
+
+.text {
+    font-size: 20px;
+    background-color: rgb(89, 144, 151);
+    text-align: center;
+    padding: 25px;
+}
+
+.happy{
+    background-color: red;
+    font-size: 30px;
+    padding: 70px 0;
+    text-align: center;
+}  
+
+.tie {
+    background-image: url("images/tie.png");
+    grid-column: span 2;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.sign {
+    background-image: url("images/sign.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.moped {
+    background-image: url("images/moped.jpg");
+    grid-column: span 2;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+}
+
+.light {
+    background-image: url("images/light.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.sax {
+    background-image: url("images/sax.jpg");
+    grid-column: span 2;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.flower{
+    background-image: url("images/flower.jpg");
+    grid-column: span 2;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 600px){
+
+
+ main {
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+ }
+ 
+ .text {
+     grid-row: span 2;
+ }
+
+ .happy{
+     grid-row: span 1;
+ }
+.flower{
+    grid-column: span 1;
+}
+.sax {
+    grid-column: span 1;
+}
+.tie{
+    grid-row: span 2;
+   
+}
+.moped {
+    grid-row: span 2;
+    grid-column: span 2;    
+}
+
+.light {
+    grid-row: span 1;
+}
+.sign {
+    grid-row: span 2;
+}
+}
